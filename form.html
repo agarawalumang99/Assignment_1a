@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+</head>
+
+<!-- ASSIGNMENT 1: To create a HTML form for BIO DATA -->
+
+<!-- The words in red shown here depicts that these are deprecated from HTML and can be best used through CSS Styling -->
+
+<body bgcolor="#ADD8E6" style="padding: 40px; padding-left: 500px;">
+    <div style="background-color:white; border-radius: 10px; padding:40px; width: fit-content;">
+        <h1 align="center">BIO DATA</h1>
+        
+        <!-- Form for the bio data information -->
+        <!-- This is MY BIO DATA -->
+
+        <form action="submit.html" method="GET">
+            <fieldset style="width: 500px;">
+                <legend>Personal Information</legend>
+
+                <label for="firstname" >FirstName:</label>
+                <input type="text" id="firstname" placeholder="First Name" name="firstname" style="border-radius: 5px;">
+
+                <label for="lastname">LastName:</label>
+                <input type="text" id="lastname" placeholder="Last Name" name="lastname" style="border-radius: 5px;">
+                <br>
+                <br>
+
+                <label for="male">Male:</label>
+                <input type="radio" id="male" name="gender">
+
+                <label for="female">Female:</label>
+                <input type="radio" id="female" name="gender">
+
+                <label for="others">Other:</label>
+                <input type="radio" id="others" name="gender">
+
+                <br>
+                <br>
+
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" style="border-radius: 5px;">
+
+                <br>
+                <br>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" placeholder="Enter your email" id="email" name="email" style="border-radius: 5px;">
+
+                <br>
+                <br>
+
+                <label for=phonenumber>Phone</label>
+                <input type="number" maxlength="10" placeholder="+91" id="phonenumber" name="phonenumber" style="border-radius: 5px;">
+
+                <br>
+                <br>
+
+                <label for=height>Height</label>
+                <input type="number" placeholder="Height in feet" id="height" name="height" style="border-radius: 5px;">
+
+            </fieldset>
+
+            <fieldset style="width: 500px;">
+
+                <legend>Education</legend>
+
+                <label for="schoolname">School Name:</label>
+                <input type="text" id="schoolname" placeholder="School Name" name="schoolname" style="border-radius: 5px;">
+
+                <br>
+                <br>
+
+                <label for="your_class">Class:</label>
+                <input type="number" id="your_class" placeholder="Enter Class" name="your_class" style="border-radius: 5px;">
+
+                <br>
+                <br>
+
+                <label for="stream">Stream:</label>
+                <select name="stream" id="stream" style="border-radius: 5px;">
+                    <option>Stream</option>
+                    <option>Physics</option>
+                    <option>Mathematics</option>
+                    <option>Chemistry</option>
+                    <option>Commerce</option>
+                    <option>Accountancy</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="marksheet">Marksheet:</label>
+                <input type="file" id="marksheet" name="marksheet" style="border-radius: 5px;">
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" style="background-color:limegreen; border-radius: 10px; 
+            border-color: white; padding-left: 40px; padding-right: 40px; height: 50px; width: 525px;">
+
+        </form>
+    </div>
+</body>
+
+</html>
